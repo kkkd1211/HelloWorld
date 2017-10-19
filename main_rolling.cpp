@@ -77,24 +77,24 @@ int main()
     fclose(fp);
     pgene Gene[7];
     double tmp[Nx];
-    fp=fopen("Bcd.txt","r");
+    fp=fopen("input/Bcd.txt","r");
     for(i=0;i<Nx;i++)
         fscanf(fp,"%lf\t",&tmp[i]);
     Gene[0]=new gene(tmp);
     fclose(fp);    
-//    fp=fopen("Nos.txt","r");
+//    fp=fopen("input/Nos.txt","r");
     for(i=0;i<Nx;i++)
 //        fscanf(fp,"%lf\t",&tmp[i]);
         tmp[i]=1-Gene[0]->c0[i];
     Gene[1]=new gene(tmp);
 //    fclose(fp);
-    fp=fopen("Tll.txt","r");
+    fp=fopen("input/Tll.txt","r");
     for(i=0;i<Nx;i++)
         fscanf(fp,"%lf\t",&tmp[i]);
     Gene[2]=new gene(tmp);
     fclose(fp);
     Gene[3]=new gene();
-    fp=fopen("M_hb2.txt","r");
+    fp=fopen("input/M_hb2.txt","r");
     for(i=0;i<100;i++)
         fscanf(fp,"%lf\t",&tmp[i]);
     Gene[4]=new gene();
