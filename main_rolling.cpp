@@ -10,7 +10,7 @@ using namespace std;
 #define K0 1    //7.3
 #define K1 6.31 //8.1
 #define K2 10   //8.3
-#define T 5000
+#define T 2000
 #ifndef ori
 int topolo[7][7]={  0,  0,  0,  1,  1,  0,  1,
                     0,  0,  0,  1,  0,  0,  1,
